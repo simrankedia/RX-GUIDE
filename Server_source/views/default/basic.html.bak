@@ -1,0 +1,1 @@
+{{=details['patient_name']}}!{{=details['sex']}}!{{=age}}!{{=allergies}}

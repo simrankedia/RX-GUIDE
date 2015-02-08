@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" 
+        android:layout_weight=".1">
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F0F0F0"
+            android:hint="Patient ID"
+            android:inputType="number" />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showtext"
+            android:src="@drawable/submit" />
+       
+        <ImageButton
+            android:id="@+id/draw_btn"
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/brush"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/brush" />
+
+        <ImageButton
+            android:id="@+id/erase_btn"
+            android:layout_width="0dp"
+            android:layout_weight=".14"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/erase"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/eraser" />
+        
+        <ImageButton
+    		android:id="@+id/save_btn"
+    		android:layout_width="0dp"
+            android:layout_weight=".14"
+            android:layout_height="fill_parent"
+    		android:contentDescription="@string/save"
+    		android:background="?android:attr/selectableItemBackground"
+    		android:src="@drawable/save" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_weight=".14"
+            android:layout_height="wrap_content"
+            android:onClick="printer"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/print"
+            style="@style/btnStyleShakespeare" />
+      
+    </LinearLayout>
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal" 
+        android:layout_weight=".05">
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:hint="Name"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:background="#F0F0F0"
+            android:inputType="text|textPersonName" />
+        
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:hint="Age"
+            android:background="#F0F0F0"
+            android:inputType="number|text" />
+        
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".16"
+            android:hint="Gender"
+            android:background="#F0F0F0"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Allergies"
+        android:background="#F0F0F0"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_weight=".1" />
+    
+    <com.example.rxguide.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:background="#FFFFFF" 
+        android:layout_weight=".75"/>
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight=".05" >
+
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:hint="Date"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:background="#F0F0F0"
+            android:inputType="date" />
+        
+        <EditText
+            android:id="@+id/dname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:hint="Doctor Name"
+            android:background="#F0F0F0"
+            android:inputType="text" />
+		
+        </LinearLayout>
+    
+
+</LinearLayout>    

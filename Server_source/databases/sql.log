@@ -1,0 +1,138 @@
+timestamp: 2013-10-27T01:32:14.055961
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+success!
+timestamp: 2013-10-27T01:32:14.355811
+CREATE TABLE auth_group(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    role CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2013-10-27T01:32:14.488957
+CREATE TABLE auth_membership(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE
+);
+success!
+timestamp: 2013-10-27T01:32:14.611776
+CREATE TABLE auth_permission(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE,
+    name CHAR(512),
+    table_name CHAR(512),
+    record_id INTEGER
+);
+success!
+timestamp: 2013-10-27T01:32:14.740125
+CREATE TABLE auth_event(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    time_stamp TIMESTAMP,
+    client_ip CHAR(512),
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    origin CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2013-10-27T01:32:14.884578
+CREATE TABLE auth_cas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    service CHAR(512),
+    ticket CHAR(512),
+    renew CHAR(1)
+);
+success!
+timestamp: 2013-10-27T01:32:15.026503
+CREATE TABLE Patient(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Patient_ID INTEGER,
+    name CHAR(512),
+    dob CHAR(512),
+    sex CHAR(512),
+    contact INTEGER,
+    allergies TEXT
+);
+success!
+success!
+success!
+success!
+success!
+timestamp: 2013-10-27T01:56:53.669313
+CREATE TABLE patient(
+    patient_id INTEGER NOT NULL,
+    name CHAR(512),
+    dob CHAR(512),
+    sex CHAR(512),
+    contact INTEGER,
+    allergies TEXT,
+    PRIMARY KEY(patient_id)) ;
+success!
+success!
+timestamp: 2013-10-27T01:59:40.143157
+CREATE TABLE table1(
+    patient_id INTEGER NOT NULL,
+    name CHAR(512),
+    dob CHAR(512),
+    sex CHAR(512),
+    contact INTEGER,
+    allergies TEXT,
+    PRIMARY KEY(patient_id)) ;
+success!
+timestamp: 2013-10-27T02:04:09.207634
+ALTER TABLE table1 ADD id INTEGER NOT NULL;
+timestamp: 2013-10-27T02:04:53.417647
+ALTER TABLE table1 ADD id INTEGER PRIMARY KEY AUTOINCREMENT;
+timestamp: 2013-10-27T02:07:59.997204
+ALTER TABLE table1 ADD id INTEGER PRIMARY KEY AUTOINCREMENT;
+timestamp: 2013-10-27T11:09:36.425304
+ALTER TABLE table1 ADD id INTEGER PRIMARY KEY AUTOINCREMENT;
+timestamp: 2013-10-27T11:11:49.953540
+ALTER TABLE table1 ADD id INTEGER PRIMARY KEY AUTOINCREMENT;
+timestamp: 2013-10-27T11:12:19.400321
+ALTER TABLE table1 ADD patient_name CHAR(512);
+timestamp: 2013-10-27T11:12:19.578990
+ALTER TABLE table1 ADD id INTEGER PRIMARY KEY AUTOINCREMENT;
+timestamp: 2013-10-27T11:12:39.822646
+ALTER TABLE table1 ADD id INTEGER PRIMARY KEY AUTOINCREMENT;
+timestamp: 2013-10-27T11:13:32.167042
+ALTER TABLE table1 ADD id INTEGER PRIMARY KEY AUTOINCREMENT;
+timestamp: 2013-10-27T11:14:17.884047
+CREATE TABLE table2(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    patient_name CHAR(512),
+    dob CHAR(512),
+    sex CHAR(512),
+    contact CHAR(512)
+);
+success!
+timestamp: 2013-10-27T11:14:55.317042
+ALTER TABLE table2 ADD allergies TEXT;
+success!
+timestamp: 2013-11-05T10:31:44.671115
+CREATE TABLE patient_details(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    patient_name CHAR(512),
+    dob CHAR(512),
+    sex CHAR(512),
+    contact CHAR(512),
+    allergies TEXT
+);
+success!
+timestamp: 2013-11-05T10:31:44.958373
+CREATE TABLE prescription(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    patient_id INTEGER,
+    prescription_image CHAR(512)
+);
+success!

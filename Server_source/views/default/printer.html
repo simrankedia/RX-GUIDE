@@ -1,0 +1,19 @@
+<head>
+    
+<script src="https://www.google.com/cloudprint/client/cpgadget.js">
+</script>
+<script>
+  window.onload = function() {
+    var gadget = new cloudprint.Gadget();
+    gadget.setPrintButton(
+        cloudprint.Gadget.createDefaultPrintButton("print_button_container")); // div id to contain the button
+gadget.setPrintDocument("url", "Test Page", "http://127.0.0.1:8000/RXGUIDE/default/prescription_PDF?uid=13&name=Vignesh_Prasad&age=18&sex=male&allergy=penicillin");
+
+  }
+</script>
+    
+</head>
+<body>
+    <div id="print_button_container"></div>
+    
+</body>

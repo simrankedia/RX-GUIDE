@@ -1,0 +1,9 @@
+User Guide for RXGUIDE
+
+After installing the RXGUIDE app on your android device, when you open it, there will be a view with 3 scrollable tabs. 
+The first one is to retrieve a patients previous prescriptions, given their patient ID. 
+The second one is an interface for the clinic administrator/doctor's assistant to register a new patient. after a successful registration, a small pop-up shall give the ID of the patient.
+The third is for the doctor to write prescriptions. The doctor first has to fill in his own name eg. "Dr. Ram Murthy" and also the hospital/clinic name eg. "ABC Hospitals", after which he can write the prescription for the patient. 
+The doctor has to fill in the patient ID in the space provided at the top left corner and after confirming it, the doctor must press the submit button following which, the patient details for the given patient ID will be automatically filled in the prescription. The doctor,after examining the patient, can write the prescription in the space provided and save the prescription by clicking on the save icon. 
+The doctor can also print the prescription by clicking on the print icon. In order to print a prescription, the doctor must first save the prescription. Also, if the doctor changes the prescription after saving it, he must save it again if he wants to print the changed prescription otherwise, the previous prescription itself will get printed. 
+Since printing is done using google cloud print, it is mandatory that either the doctor or the clinic has a google email ID and also there is a printer present in the clinic which has been registered with the corresponding google ID on google cloud print. 

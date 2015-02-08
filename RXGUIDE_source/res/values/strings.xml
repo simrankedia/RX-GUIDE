@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RX-GUIDE</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">NAME</string>
+    <string name="age">AGE</string>
+    <string name="dob">DATE OF BIRTH</string>
+    <string name="allergy">ALLERGIES</string>
+    <string name="contact">CONTACT NO.</string>
+    <string name="p_id">PATIENT ID</string>
+    <string name="sex">SEX</string>
+    <string name="submit">SUBMIT</string>
+    <string name="title_activity_doctor">Doctor </string>
+    <string name="title_activity_clinic__admin">Clinic Admin </string>
+    <string name="title_activity_doctordetails">Doctor details</string>
+    <string name="doc_name">Doctor Name</string>
+    <string name="brush">Brush</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+    <string name="sml">Small</string>
+    <string name="med">Medium</string>
+    <string name="lrg">Large</string>
+    <string name="title_activity_prescriptiondisplay">View Prescriptions</string>
+    <string name="title_activity_patient_id">Patient ID</string>
+    <string name="title_activity_print_view">PrintView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_print_dialog">PrintDialogActivity</string>
+
+</resources>
